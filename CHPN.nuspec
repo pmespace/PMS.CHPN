@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>PMS.CHPN</id>
+    <version>1.0.0</version>
+    <title>PMS.CHPN</title>
+    <authors>philippemp31</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/pmespace/PMS.CHPN.git" branch="master" />
+    <projectUrl>https://github.com/pmespace/PMS.CHPN/</projectUrl>
+    <description>
+      Library allowing to create and manage CHPN messages.
+      These messages can be used to get a check guarantee in France.
+      Exchaing messages can be done using the primitives contained in attached PMS.COMMON library.
+    </description>
+    <releaseNotes>Creation</releaseNotes>
+    <copyright>PMS - philippemp31</copyright>
+    <developmentDependency>true</developmentDependency>
+    <tags>CHPN</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7">
+      </group>
+      <group targetFramework=".NETFramework3.5">
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\Release\PMS.CHPN.dll" target="lib\net47"></file>
+    <file src=".\Release\PMS.CHPN.xml" target="lib\net475"></file>
+    <file src=".\Release\PMS.CHPN35.dll" target="lib\net35"></file>
+    <file src=".\Release\PMS.CHPN35.xml" target="lib\net35"></file>
+  </files>
+</package>
