@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ba9a4a49-17aa-4108-8b6c-9d92981e6ab2</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CHPN_SHARED</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CAPDU.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CAPDUID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CBitmap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CField.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CFieldGeneric.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CFields.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CFieldTLV.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CTLV.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)APDU\CTLVStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CHPN.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Encoder\CEncoder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Encoder\CEncoderAN.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Encoder\CEncoderANS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Encoder\CEncoderANSB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Encoder\CEncoderCMC7.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Encoder\CEncoderDCB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\CInvalidDataLengthException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\CInvalidDataSizeException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\CInvalidFormatException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\CInvalidValueException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IPDU\CIPDU.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IPDU\CPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IPDU\CPIs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IPDU\CPIStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rawdata\CRawdata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transcoder\Transcoder.cs" />
+  </ItemGroup>
+</Project>
