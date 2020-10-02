@@ -20,14 +20,17 @@
     <tags>CHPN</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.7">
+        <dependency id="PMS.COMMON" version="1.0.1" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
       </group>
       <group targetFramework=".NETFramework3.5">
+        <dependency id="PMS.COMMON" version="1.0.1" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src=".\Release\PMS.CHPN.dll" target="lib\net47"></file>
-    <file src=".\Release\PMS.CHPN.xml" target="lib\net475"></file>
+    <file src=".\Release\PMS.CHPN.xml" target="lib\net47"></file>
     <file src=".\Release\PMS.CHPN35.dll" target="lib\net35"></file>
     <file src=".\Release\PMS.CHPN35.xml" target="lib\net35"></file>
   </files>
