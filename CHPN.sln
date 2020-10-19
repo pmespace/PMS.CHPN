@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHPN", "CHPN\CHPN.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHPN35", "CHPN35\CHPN35.csproj", "{F118C518-C8DE-4515-BCE3-CD5016A579DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C5A823C-149C-4E96-89D6-EC8354D8D628}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		nuget.nuspec = nuget.nuspec
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CHPN_SHARED\CHPN_SHARED.projitems*{ba9a4a49-17aa-4108-8b6c-9d92981e6ab2}*SharedItemsImports = 13
