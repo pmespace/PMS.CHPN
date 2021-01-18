@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>PMS.CHPN</id>
-    <version>2.0.5</version>
+    <version>2.0.6</version>
     <title>PMS.CHPN</title>
     <authors>philippemp31</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,9 +15,12 @@
       Exchaing messages can be done using the primitives contained in attached PMS.COMMON library.
     </description>
     <releaseNotes>
+      2.0.6
+      - Moved to PMS.COMMON 3.0.9
+      
       2.0.5
       - Updated COMMON package to 3.0.8
-      
+
       2.0.4
       - Updated COMMON package to 3.0.7
 
@@ -40,10 +43,10 @@
     <tags>CHPN</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.7">
-        <dependency id="PMS.COMMON" version="3.0.7" />
+        <dependency id="PMS.COMMON" version="3.0.9" />
       </group>
       <group targetFramework=".NETFramework3.5">
-        <dependency id="PMS.COMMON" version="3.0.7" />
+        <dependency id="PMS.COMMON" version="3.0.9" />
       </group>
     </dependencies>
   </metadata>
