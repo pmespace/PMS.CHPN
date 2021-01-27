@@ -288,8 +288,15 @@ namespace CHPN
 	[Guid("975A515A-6214-49D2-A715-6CDA73F216E2")]
 	[ClassInterface(ClassInterfaceType.None)]
 	[ComVisible(true)]
-	public class CCHPN: ICHPN
+	public class CCHPN : ICHPN
 	{
+		#region constructors
+		/// <summary>
+		/// Constructor loads merchant settings
+		/// </summary>
+		public CCHPN() { }
+		#endregion
+
 		#region constants
 		private const string F02_DEFAULT = "";
 		private const string F03_DEFAULT = "000000";
@@ -702,13 +709,6 @@ namespace CHPN
 		public string F49_InputCurrency { get => F49_Input; }
 		public string F49_Input { get => F49_DEFAULT; }
 		public string F49 { get; private set; }
-		#endregion
-
-		#region constructors
-		/// <summary>
-		/// Constructor loads merchant settings
-		/// </summary>
-		public CCHPN() { }
 		#endregion
 
 		#region methods
