@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>PMS.CHPN</id>
-    <version>2.0.7</version>
+    <version>2.0.8</version>
     <title>PMS.CHPN</title>
     <authors>philippemp31</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,12 +15,15 @@
       Exchaing messages can be done using the primitives contained in attached PMS.COMMON library.
     </description>
     <releaseNotes>
+      2.0.8
+      - Moved to PMS.COMMON 3.0.10 which allows managing SSL errors in communication
+
       2.0.7
       - Added the ability to change a PI programmatically before sending the IPDU (UpdatePI inside CIPDU)
-      
+
       2.0.6
       - Moved to PMS.COMMON 3.0.9
-      
+
       2.0.5
       - Updated COMMON package to 3.0.8
 
@@ -46,17 +49,19 @@
     <tags>CHPN</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.7">
-        <dependency id="PMS.COMMON" version="3.0.9" />
+        <dependency id="PMS.COMMON" version="3.0.10" />
       </group>
       <group targetFramework=".NETFramework3.5">
-        <dependency id="PMS.COMMON" version="3.0.9" />
+        <dependency id="PMS.COMMON" version="3.0.10" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src=".\Release\PMS.CHPN.dll" target="lib\net47"></file>
     <file src=".\Release\PMS.CHPN.xml" target="lib\net47"></file>
+    <file src=".\Release\PMS.CHPN.pdb" target="lib\net47"></file>
     <file src=".\Release\PMS.CHPN35.dll" target="lib\net35"></file>
     <file src=".\Release\PMS.CHPN35.xml" target="lib\net35"></file>
+    <file src=".\Release\PMS.CHPN35.pdb" target="lib\net35"></file>
   </files>
 </package>

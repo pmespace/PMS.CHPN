@@ -961,6 +961,7 @@ namespace CHPN
 		}
 		/// <summary>
 		/// Create the IP address and try to send data
+		/// Using this function makes that no SSL error is allowed at all in communication
 		/// </summary>
 		/// <param name="request">IPDU to send</param>
 		/// <param name="ip">IP address or URL to reach</param>
@@ -973,7 +974,6 @@ namespace CHPN
 		{
 			CStreamClientSettings streamSettings = new CStreamClientSettings(ip, port);
 			streamSettings.ServerName = servername;
-			streamSettings.CheckCertificate = !string.IsNullOrEmpty(servername);
 			streamSettings.SendTimeout = sendtimeout;
 			streamSettings.ReceiveTimeout = receivetimeout;
 			return SendMessage(request, streamSettings);
