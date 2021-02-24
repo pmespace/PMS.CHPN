@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>PMS.CHPN</id>
-    <version>2.0.8</version>
+    <version>3.0.0</version>
     <title>PMS.CHPN</title>
     <authors>philippemp31</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,6 +15,9 @@
       Exchaing messages can be done using the primitives contained in attached PMS.COMMON library.
     </description>
     <releaseNotes>
+      3.0.0
+      - Moved to PMS.COMMON 4.0.0 which allows using TLS with .NET 3.5 (requires .NET 3.5 SP 1)
+
       2.0.8
       - Moved to PMS.COMMON 3.0.10 which allows managing SSL errors in communication
 
@@ -49,16 +52,17 @@
     <tags>CHPN</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.7">
-        <dependency id="PMS.COMMON" version="3.0.10" />
+        <dependency id="PMS.COMMON" version="4.0.0" />
       </group>
       <group targetFramework=".NETFramework3.5">
-        <dependency id="PMS.COMMON" version="3.0.10" />
+        <dependency id="PMS.COMMON" version="4.0.0" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src=".\Release\PMS.CHPN.dll" target="lib\net47"></file>
     <file src=".\Release\PMS.CHPN.xml" target="lib\net47"></file>
+    <file src=".\Release\PMS.CHPN.tlb" target="lib\net47"></file>
     <file src=".\Release\PMS.CHPN.pdb" target="lib\net47"></file>
     <file src=".\Release\PMS.CHPN35.dll" target="lib\net35"></file>
     <file src=".\Release\PMS.CHPN35.xml" target="lib\net35"></file>

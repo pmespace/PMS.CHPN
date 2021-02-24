@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>PMS.CHPN.CORE</PackageId>
+    <Company>PME</Company>
+    <Authors>PME</Authors>
+    <Product>PMS.CHPN.CORE</Product>
+    <Description>CHPN, check authorisation protocol implementation</Description>
+    <Copyright>PMS 2021</Copyright>
+    <PackageIcon>Taxi-64.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Taxi-64.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <Import Project="..\CHPN_SHARED\CHPN_SHARED.projitems" Label="Shared" />
+
+</Project>
