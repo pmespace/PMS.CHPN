@@ -55,10 +55,10 @@
     <tags>CHPN</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.7">
-        <dependency id="PMS.COMMON" version="4.0.0" />
+        <dependency id="PMS.COMMON" version="4.0.1" />
       </group>
       <group targetFramework=".NETFramework3.5">
-        <dependency id="PMS.COMMON" version="4.0.0" />
+        <dependency id="PMS.COMMON" version="4.0.1" />
       </group>
     </dependencies>
   </metadata>
