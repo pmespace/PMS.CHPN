@@ -63,12 +63,12 @@
     </dependencies>
   </metadata>
   <files>
-    <file src=".\Release\PMS.CHPN.dll" target="lib\net47"></file>
-    <file src=".\Release\PMS.CHPN.xml" target="lib\net47"></file>
-    <file src=".\Release\PMS.CHPN.tlb" target="lib\net47"></file>
-    <file src=".\Release\PMS.CHPN.pdb" target="lib\net47"></file>
-    <file src=".\Release\PMS.CHPN35.dll" target="lib\net35"></file>
-    <file src=".\Release\PMS.CHPN35.xml" target="lib\net35"></file>
-    <file src=".\Release\PMS.CHPN35.pdb" target="lib\net35"></file>
+    <file src=".\Bin\PMS.CHPN.dll" target="lib\net47"></file>
+    <file src=".\Bin\PMS.CHPN.xml" target="lib\net47"></file>
+    <file src=".\Bin\PMS.CHPN.tlb" target="lib\net47"></file>
+    <file src=".\Bin\PMS.CHPN.pdb" target="lib\net47"></file>
+    <file src=".\Bin\PMS.CHPN35.dll" target="lib\net35"></file>
+    <file src=".\Bin\PMS.CHPN35.xml" target="lib\net35"></file>
+    <file src=".\Bin\PMS.CHPN35.pdb" target="lib\net35"></file>
   </files>
 </package>
