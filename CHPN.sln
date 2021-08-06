@@ -16,10 +16,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Framework", ".NET Framework", "{7B2C4DE9-462B-46A1-91ED-AEA1C73BB620}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET 5.0", ".NET 5.0", "{BAF34B9D-0C2F-47BB-AF6B-E2FCA9F159D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHPN.CORE", "CHPN.CORE\CHPN.CORE.csproj", "{C6550AC5-027B-4244-9D82-5B847026EC4D}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CHPN_SHARED\CHPN_SHARED.projitems*{ba9a4a49-17aa-4108-8b6c-9d92981e6ab2}*SharedItemsImports = 13
 		CHPN_SHARED\CHPN_SHARED.projitems*{bd335486-7558-45d7-b020-6b4c29c5c652}*SharedItemsImports = 4
+		CHPN_SHARED\CHPN_SHARED.projitems*{c6550ac5-027b-4244-9d82-5b847026ec4d}*SharedItemsImports = 5
 		CHPN_SHARED\CHPN_SHARED.projitems*{f118c518-c8de-4515-bce3-cd5016a579df}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,9 +42,18 @@ Global
 		{F118C518-C8DE-4515-BCE3-CD5016A579DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F118C518-C8DE-4515-BCE3-CD5016A579DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F118C518-C8DE-4515-BCE3-CD5016A579DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6550AC5-027B-4244-9D82-5B847026EC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6550AC5-027B-4244-9D82-5B847026EC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6550AC5-027B-4244-9D82-5B847026EC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6550AC5-027B-4244-9D82-5B847026EC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD335486-7558-45D7-B020-6B4C29C5C652} = {7B2C4DE9-462B-46A1-91ED-AEA1C73BB620}
+		{F118C518-C8DE-4515-BCE3-CD5016A579DF} = {7B2C4DE9-462B-46A1-91ED-AEA1C73BB620}
+		{C6550AC5-027B-4244-9D82-5B847026EC4D} = {BAF34B9D-0C2F-47BB-AF6B-E2FCA9F159D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D0C4085D-91EE-4E02-9AD0-220FF5AC33F5}

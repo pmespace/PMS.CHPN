@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>PMS.CHPN</id>
-    <version>3.0.1</version>
+    <version>4.0.0</version>
     <title>PMS.CHPN</title>
     <authors>philippemp31</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,9 +15,12 @@
       Exchaing messages can be done using the primitives contained in attached PMS.COMMON library.
     </description>
     <releaseNotes>
+      4.0.0
+      - Moved to PMS.COMMON 5.1.0
+
       3.0.1
       - Moved to PMS.COMMON 4.0.1
-      
+
       3.0.0
       - Moved to PMS.COMMON 4.0.0 which allows using TLS with .NET 3.5 (requires .NET 3.5 SP 1)
 
@@ -48,27 +51,29 @@
       2.0.0
       - Removed WMI from dependencies
 
+      1.0.0
       Creation
     </releaseNotes>
-    <copyright>PMS - philippemp31 at outlook dot com</copyright>
+    <copyright>PMS - philippemp31@outlook.com - 2020</copyright>
     <developmentDependency>true</developmentDependency>
     <tags>CHPN</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.7">
-        <dependency id="PMS.COMMON" version="4.0.1" />
+        <dependency id="PMS.COMMON" version="5.1.0" />
       </group>
       <group targetFramework=".NETFramework3.5">
-        <dependency id="PMS.COMMON" version="4.0.1" />
+        <dependency id="PMS.COMMON" version="5.1.0" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src=".\Bin\PMS.CHPN.dll" target="lib\net47"></file>
-    <file src=".\Bin\PMS.CHPN.xml" target="lib\net47"></file>
-    <file src=".\Bin\PMS.CHPN.tlb" target="lib\net47"></file>
-    <file src=".\Bin\PMS.CHPN.pdb" target="lib\net47"></file>
-    <file src=".\Bin\PMS.CHPN35.dll" target="lib\net35"></file>
-    <file src=".\Bin\PMS.CHPN35.xml" target="lib\net35"></file>
-    <file src=".\Bin\PMS.CHPN35.pdb" target="lib\net35"></file>
+    <file src=".\bin\net47\PMS.CHPN.dll" target="lib\net47"></file>
+    <file src=".\bin\net47\PMS.CHPN.xml" target="lib\net47"></file>
+    <file src=".\bin\net47\PMS.CHPN.tlb" target="lib\net47"></file>
+    <file src=".\bin\net47\PMS.CHPN.pdb" target="lib\net47"></file>
+
+    <file src=".\bin\net35\PMS.CHPN35.dll" target="lib\net35"></file>
+    <file src=".\bin\net35\PMS.CHPN35.xml" target="lib\net35"></file>
+    <file src=".\bin\net35\PMS.CHPN35.pdb" target="lib\net35"></file>
   </files>
 </package>
