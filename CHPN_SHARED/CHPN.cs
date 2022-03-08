@@ -875,7 +875,7 @@ namespace CHPN
 				msg += "IPDU => PGI: " + ipdu.PGI.ToString("X2") + " - LGI: " + ipdu.LGI.ToString("X2") + Chars.CRLF;
 				// IPDU PI
 				foreach (KeyValuePair<byte, CPI> pi in ipdu.PI)
-					msg += " + PI" + pi.Value.PI.ToString("X2") + " - Longueur: " + pi.Value.PILen.ToString() + " - Valeur: " + CMisc.BytesToHexStr(pi.Value.Data) + Chars.CRLF;
+					msg += " + PI" + pi.Value.PI.ToString("X2") + " - Longueur: " + pi.Value.PILen.ToString() + " - Valeur: " + CMisc.AsString(pi.Value.Data) + Chars.CRLF;
 
 				//APDU details
 				msg += "APDU => ID: " + ipdu.APDU.ID + " - Bitmap: " + ipdu.APDU.Bitmap.ToString() + Chars.CRLF;
@@ -897,7 +897,7 @@ namespace CHPN
 
 				// APDU fields
 				foreach (KeyValuePair<int, CField> fi in ipdu.APDU.Fields)
-					msg += " + CHAMP " + fi.Key.ToString("00") + " - Valeur: " + CMisc.BytesToHexStr(fi.Value.Rawdata) + " (" + fi.Value.Data + ")" + Chars.CRLF;
+					msg += " + CHAMP " + fi.Key.ToString("00") + " - Valeur: " + CMisc.AsString(fi.Value.Rawdata) + " (" + fi.Value.Data + ")" + Chars.CRLF;
 
 				msg += "IPDU complète: " + ipdu.ToString() + Chars.CRLF;
 				msg += "APDU complète: " + ipdu.APDU.ToString() + Chars.CRLF;

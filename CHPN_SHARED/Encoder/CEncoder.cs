@@ -1,5 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Reflection;
+using System.Text;
+using System;
 using CHPN.Exceptions;
 using COMMON;
 
@@ -116,7 +118,7 @@ namespace CHPN.Encoder
 		/// <returns></returns>
 		public virtual byte[] Encode(string buffer, int minlen, int maxlen, out int length)
 			{
-			throw new CNotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
+			throw new ENotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
 			}
 		/// <summary>
 		/// </summary>
@@ -127,7 +129,7 @@ namespace CHPN.Encoder
 		/// <returns></returns>
 		public virtual byte[] Encode(byte[] buffer, int minlen, int maxlen, out int length)
 			{
-			throw new CNotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
+			throw new ENotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
 			}
 		/// <summary>
 		/// </summary>
@@ -140,7 +142,7 @@ namespace CHPN.Encoder
 		/// <returns></returns>
 		public virtual byte[] Decode(byte[] buffer, int start, int minlen, int maxlen, out int offset, out byte[] rawdata)
 			{
-			throw new CNotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
+			throw new ENotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
 			}
 		/// <summary>
 		/// </summary>
@@ -161,7 +163,7 @@ namespace CHPN.Encoder
 		/// <returns></returns>
 		public virtual string CompleteValue(string value, int minlen, int maxlen, out int length)
 			{
-			throw new CNotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
+			throw new ENotImplemented(MethodBase.GetCurrentMethod().Name, MethodBase.GetCurrentMethod().DeclaringType.ToString());
 			}
 		/// <summary>
 		/// <see cref="IEncoder.ToString(byte[])"/>
@@ -170,7 +172,13 @@ namespace CHPN.Encoder
 		/// <returns></returns>
 		public virtual string ToString(byte[] buffer)
 			{
-			return CMisc.BytesToStr(buffer);
+			string s = null;
+			try
+			{
+				s = Encoding.UTF8.GetString(buffer);
+			}
+			catch (Exception) { }
+			return s;
 			}
 		/// <summary>
 		/// <see cref="IEncoder.ToLong(byte[])"/>

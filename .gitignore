@@ -10,6 +10,9 @@
 *.userosscache
 *.sln.docstates
 
+# No PDF
+*.pdf
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -342,3 +345,4 @@ healthchecksdb
 # nuget private files
 Nuget/
 *.nupkg
+/desktop.ini
